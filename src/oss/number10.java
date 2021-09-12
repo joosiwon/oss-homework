@@ -2,27 +2,30 @@ package oss;
 
 import java.util.Scanner;
 
-public class number7 {
-	public static boolean inRect(double x, double y, double CircleX, double CircleY, double radios)
+public class number10 {
 	
-	{
-	 if ()	
-	 		return true;
-	 		else return false;
-
-	}
 	public static void main(String[] args) {
-		float PI = 3.14f;
-		 Scanner sc = new Scanner(System.in);
-         System.out.print("원의 중심과 반지름 입력>>");
-         double CircleX = sc.nextDouble();
-         double CircleY = sc.nextDouble();
-         double radius = sc.nextDouble();
-         System.out.println("점 입력>>");
-         double x = sc.nextDouble();
-         double y = sc.nextDouble();
-         double cir = radius * radius * PI;
+		System.out.println("첫번째 원의 중심과 반지름 입력");
+		Scanner sc = new Scanner(System.in);
+		double x1 = sc.nextDouble();
+		double y1 = sc.nextDouble();
+		double radius1 = sc.nextDouble();
+		System.out.println("두번째 원의 중신과 반지름 입력");
+		double x2 = sc.nextDouble();
+		double y2 = sc.nextDouble();
+		double radius2 = sc.nextDouble();
+		
+		double result=Math.sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
+		
+		
+         if(result <= radius1+radius2)
+         {
+        	 System.out.println("두 원은 서로 겹친다.");
+         }
          
+         else
+        	 System.out.println("두 원은 서로 겹치지 않는다");
+  
          
 
 	}
